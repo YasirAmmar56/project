@@ -1,99 +1,74 @@
-.separator-type, .title-type, .intro-type, .content-type .intro-type p {
-    position: relative;
-}
-.intro-type .container {
-    padding: 107px 0px 102px 0px !important;
-}
-#product-header-section, .intro-type .container {
-    padding: 68px 15px 72px !important;
-}
-@media (min-width: 1630px)
-.container {
-    width: 1630px;
-}
-.parallax {
-    background-attachment: inherit !important;
-}
-.parallax {
-    background-attachment: inherit !important;
-    background-repeat: repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    width: 100%;
-    z-index: -10;
-}
-.company-heading h1 {
-    margin-bottom: 40px;
-    line-height: 80px;
-    color: #fff;
-    font-weight: 700 !important;
-    text-align: center;
-}
-.seo-header, .product-header, .intro-type .container h1.white, .company-heading h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100 !important;
-    text-transform: capitalize;
-    font-size: 65px;
-    margin-bottom: 20px;
-}
-.company-sections h2, .careers-sections h2, .perks-section h2 {
-    font-weight: 800;
-    font-size: 50px;
-}
-.company-sections h2, .company-sections h3, .careers-sections h2, .perks-section h2 {
-    font-family: 'proxima-nova', sans-serif;
-}
-.company-sections h3 {
-    font-size: 25px;
-    font-weight: 700;
-    margin: 14px 0;
-    font-family: 'proxima-nova', sans-serif;
-    text-transform: capitalize;
-}
-.red-border {
-    width: 50%;
-    border-bottom: 1px solid #d2282e;
-    margin: 0 auto;
-    height: 16px;
-}
-.company-sections p {
-    margin-top: 20px;
-}
-.ct-u-size22 {
-    font-size: 22px;
-}
-.ct-u-fontWeight300 {
-    font-weight: 300;
-}
-.marginTop40 {
-    margin-top: 40px !important;
-}
-.ct-u-paddingBoth100 {
-    padding: 100px 15px;
-}
-.culture-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(https://www.solodev.com/assets/culture.jpg) top no-repeat;
-    /* background-color: #095c87; */
-    /* color: #fff; */
-}
-.company-sections, .careers-sections, .left-headquarter-section-img, .right-headquarter-section-img {
-    text-align: center;
-}
-.ct-u-paddingBoth100 {
-    padding: 100px 15px;
+body {
+  font-family: "Lato", sans-serif;
+	background-color:		#DCDCDC;
+  margin: 0;
+
 }
 
-
-
-
-
-
-.ct-u-paddingBottom100 {
-  margin-top: 40px;
+.topnav {
+  overflow: hidden;
+  background-color: #2F4F4F;
 }
-.culture-section {
-  background-size: cover;
-  color: #fff;
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.Home {
+  background-color: #808080;
+  color: white;
+}
+.topnav a.logout{
+float:right;
+background-color: #808080;
+  color: white;
+  cursor: pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 7%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

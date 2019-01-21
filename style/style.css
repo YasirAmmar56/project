@@ -1,74 +1,33 @@
-body {
-  font-family: "Lato", sans-serif;
-	background-color:		#DCDCDC;
-  margin: 0;
 
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #2F4F4F;
-}
+*					{ margin: 0; padding: 0; }
+body				{ font: 14px Georgia, serif; }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+#page-wrap		    { width: 500px; margin: 0 auto; }
+
+h1                  { margin: 25px 0; font: 14px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
+
+#quiz input {
+    vertical-align: middle;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+#quiz ol {
+   margin: 0 0 10px 20px;
 }
 
-.topnav a.Home {
-  background-color: #808080;
-  color: white;
-}
-.topnav a.logout{
-float:right;
-background-color: #808080;
-  color: white;
-  cursor: pointer;
-}
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 7%;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+#quiz ol li {
+   margin: 0 0 20px 0;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+#quiz ol li div {
+   padding: 4px 0;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+#quiz h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+#results {
+    font: 44px Georgia, Serif;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
